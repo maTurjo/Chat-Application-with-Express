@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Welcome to chatrooms</title>
+    <style>
+        .row{
+            margin-left:0px ;
+            margin-right:0px ;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="bg-light">
+            <form class="row" action="/chat" method="get">
+                <div class="row col-12 my-2">
+                    <label class="col-4" for="username">Username</label>
+                    <input required name="username" class="col-8" type="text" placeholder="Enter UserName">
+                </div>
+                <div class="row col-12 my-2">
+                    <label class="col-4" for="chatroomname">select chatroom</label>
+                    <select required class="col-8 sform-select" name="chatroomname" id="">
+                        <option value="javascript">Javascript</option>
+                        <option value="nodejs">Node js</option>
+                    </select>
+                </div>
+                <div class="my-2 row">
+                    <button class="btn btn-success" type="submit">Enter Chatroom</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
